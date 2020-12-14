@@ -1,0 +1,48 @@
+.our-pets {
+	.logo__title {
+		color: $color-dark-l;
+	}
+	.logo__sub-title {
+		color: $color-dark-3xl;
+	}
+	.hamburger__line {
+		background-color: #000;
+	}
+}
+
+.our-pets {
+	.nav-menu .link {
+		color: $color-dark-l;
+	}
+	.nav-menu .link:active {
+		color: $color-dark-3xl;
+	}
+}
+
+.our-pets {
+	.wrapper__header {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+
+.wrapper--our-pets {
+	margin: auto;
+	max-width: 1200px;
+}
+
+.wrapper--our-pets {
+	.pets__title {
+		margin-bottom: 60px;
+		@include media-tablet {
+			margin-bottom: 30px;
+		}
+		@include media-mobile {
+			margin-bottom: 42px;
+		}
+	}
+}
+
+.wrapper__navigation {
+	margin-top: 6em;
+}

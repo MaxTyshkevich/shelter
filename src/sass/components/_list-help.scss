@@ -1,0 +1,65 @@
+.list-help {
+	margin: 60px auto 0;
+	//	width: 85.5%; // не понятно
+	list-style: none;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	column-gap: 12em;
+	row-gap: 5.5em;
+	@include media-tablet {
+		column-gap: 6em;
+	}
+	@include media-mobile {
+		margin-top: 42px;
+		justify-content: flex-start;
+		column-gap: 3em;
+		row-gap: 3em;
+		padding: 0 5px;
+	}
+	.help__title {
+		margin: auto;
+	}
+}
+
+.list-help__element {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-decoration: none;
+	align-items: center;
+	max-width: max-content;
+	height: 113px; //elem deferent height
+
+	@include media-tablet {
+		max-width: initial;
+		width: 170px; // перебить max-width
+	}
+	@include media-mobile {
+		justify-content: space-between;
+		max-width: none;
+		width: 130px;
+		height: 87px;
+		img {
+			height: 50px;
+		}
+	}
+
+	h4 {
+		@include media-mobile {
+			font-size: 1.5rem;
+			line-height: 110%;
+		}
+	}
+}
+
+/* .list-help h4 {
+	margin-top: 30px;
+	@include media-mobile {
+		margin-top: 20px;
+	}
+} */
+
+/* .list-help li + li {
+	margin-left: 119px; // между елементами при переходе строки тоже 120px (что плохо)
+} */

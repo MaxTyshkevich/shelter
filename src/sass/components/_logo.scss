@@ -1,0 +1,24 @@
+.logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1rem;
+}
+.logo__title {
+	@include font(3.2rem, $font-primary);
+	line-height: 110%;
+	color: $color-primary;
+	letter-spacing: 0.06em;
+
+	margin-bottom: 10px;
+}
+
+.logo__sub-title {
+	@include font(1.3rem, $font-secondary);
+
+	line-height: 15px;
+	letter-spacing: 0.1em;
+	color: $color-light-xl;
+}
+
+/* our-pets */

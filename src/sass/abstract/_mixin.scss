@@ -1,0 +1,17 @@
+@mixin font($size, $family, $style: normal, $weight: normal) {
+	font-size: $size;
+	font-family: $family, sans-serif;
+	font-style: $style;
+	font-weight: $weight;
+}
+
+@mixin media-tablet {
+	@media (max-width: $main-1280) {
+		@content;
+	}
+}
+@mixin media-mobile {
+	@media (max-width: $main-768) {
+		@content;
+	}
+}

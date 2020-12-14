@@ -1,0 +1,23 @@
+.nav-menu {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 1.5em;
+	line-height: 1.6;
+	.link {
+		display: block;
+		color: $color-dark-s;
+	}
+	.link__active {
+		color: $color-light-s;
+		border-bottom: 3px solid $color-primary;
+	}
+
+	@include media-mobile {
+		display: none;
+	}
+}
+
+.nav-menu > li + li {
+	margin-left: 35px;
+}

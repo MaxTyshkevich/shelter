@@ -1,0 +1,120 @@
+.button {
+	cursor: pointer;
+	white-space: nowrap;
+	@include font(1.7rem, $font-primary);
+	@extend %transition;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+	text-align: center;
+	padding: 15px 45px;
+	border-radius: 100px;
+	border: none;
+	outline: none;
+
+	&--primary {
+		background-color: $color-primary;
+		color: $color-dark-3xl;
+
+		&:hover {
+			background: $color-primary-light;
+		}
+	}
+
+	&--secondary {
+		color: $color-dark-3xl;
+		padding: 13px 43px;
+		border: 2px solid $color-primary;
+
+		&:hover {
+			background: $color-primary-light;
+			border-color: $color-primary-light;
+		}
+	}
+
+	&--credit {
+		display: flex;
+		align-items: center;
+		padding: 10px 15px;
+		background: $color-primary;
+		border-radius: 9px;
+
+		@include media-mobile {
+			h4 {
+				font-size: 1.5rem;
+				line-height: 110%;
+			}
+		}
+
+		.button-credit__img {
+			margin-right: 15px;
+		}
+		&:hover {
+			background: $color-primary-light;
+		}
+	}
+}
+
+.button-arrow {
+	position: absolute;
+	top: calc(50% - 24px);
+	cursor: pointer;
+	width: 52px;
+	height: 52px;
+	border: 2px solid $color-primary;
+	border-radius: 100px;
+	@extend %transition;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../../assets/icons/Arrow-left.svg');
+	outline: none;
+
+	@include media-mobile {
+		top: initial;
+		bottom: 7.7%;
+	}
+
+	&--right {
+		right: 0px;
+		transform: rotate(-180deg);
+
+		@include media-mobile {
+			right: 19.5%;
+		}
+	}
+
+	&--left {
+		left: 0px;
+		transform: rotate(0deg);
+
+		@include media-mobile {
+			left: 19.5%;
+		}
+	}
+
+	&:hover {
+		background-color: $color-primary-light;
+		border-color: $color-primary-light;
+	}
+}
+
+.footer-btn {
+	display: flex;
+	align-items: center;
+	font-family: Georgia;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 115%;
+	letter-spacing: 0.06em;
+	color: #f1cdb3;
+}
+.footer-btn > * + * {
+	margin-left: 20px;
+}
+
+.link {
+	@include font(1.5rem, $font-secondary);
+	line-height: 160%;
+	text-decoration: none;
+	cursor: pointer;
+}

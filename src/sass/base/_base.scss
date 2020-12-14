@@ -1,0 +1,109 @@
+:root {
+	box-sizing: border-box;
+	font-size: 10px;
+}
+
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+.start-screen {
+	background: $start-screen-gradient-background;
+}
+.footer {
+	background: $footer-gradient-background;
+}
+
+img {
+	//max-width: 100%;
+	//display: block;  //убрал из за footer on 768px
+	@include media-tablet {
+		max-width: 100%;
+	}
+}
+
+section {
+	padding: 8em 0 10em;
+
+	&.about {
+		background: $color-light-xl;
+	}
+	&.pets {
+		background: $color-light-l;
+	}
+	&.help {
+		background: $color-light-l;
+	}
+	&.donation {
+		background: $color-light-l;
+	}
+	@include media-mobile {
+		padding: 4.2em 0;
+	}
+}
+
+h2 {
+	color: $color-dark-l;
+	@include font(4.4rem, Georgia);
+	line-height: 130%;
+
+	@include media-mobile {
+		font-size: 2.5rem;
+	}
+}
+
+h3 {
+	color: $color-dark-l;
+	@include font(3.5rem, Georgia);
+	line-height: 130%;
+	letter-spacing: 0.06em;
+
+	@include media-mobile {
+		font-size: 2.5rem;
+	}
+}
+h4 {
+	@include font(2rem, Georgia);
+	line-height: 115%;
+	letter-spacing: 0.06em;
+	color: $color-dark-l;
+}
+h5 {
+	@include font(1.5rem, Georgia);
+	line-height: 110%;
+	letter-spacing: 0.06em;
+	color: $color-dark-l;
+}
+
+.paragraph-large {
+	@include font(1.5rem, Arial);
+	line-height: 160%;
+	color: $color-dark-l;
+}
+
+.paragraph-small {
+	@include font(1.2rem, $style: italic, $family: Arial);
+	color: $color-dark-m;
+	line-height: 150%;
+	@include media-mobile {
+		text-align: justify;
+	}
+}
+
+.title {
+	text-align: center;
+	span {
+		display: block;
+	}
+}
+
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}

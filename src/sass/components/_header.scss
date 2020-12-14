@@ -1,0 +1,22 @@
+.wrapper__header {
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	@include media-tablet {
+		padding: 3em;
+	}
+
+	@include media-mobile {
+		display: block;
+		margin: 0;
+		padding: 3em 5.3em 0 1em;
+	}
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* our-pets */

@@ -1,0 +1,40 @@
+.about__content {
+	text-align: left;
+	flex: 0 0 50.6%;
+
+	.main-title {
+		text-align: start;
+		@include media-mobile {
+			padding: 0;
+		}
+		@include media-mobile {
+			text-align: center;
+		}
+	}
+
+	p {
+		margin-top: 25px;
+	}
+
+	@include media-tablet {
+		//order: -1;
+		margin-bottom: 80px;
+		padding: 0 3.5px;
+	}
+	@include media-mobile {
+		padding: 0 1.5em;
+		margin-bottom: 42px;
+		p {
+			text-align: justify;
+		}
+		p + p {
+			margin-top: 22px;
+		}
+	}
+}
+
+.about__img {
+	@include media-mobile {
+		width: 86.25%;
+	}
+}

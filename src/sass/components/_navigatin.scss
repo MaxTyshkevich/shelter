@@ -1,0 +1,36 @@
+.navigation {
+	display: flex;
+	justify-content: center;
+	&--button + &--button {
+		margin-left: 20px;
+	}
+}
+
+.navigation--button {
+	cursor: pointer;
+	width: 52px;
+	height: 52px;
+	border: 2px solid $color-primary;
+	border-radius: 100px;
+	outline: none;
+
+	font-size: 2rem;
+	font-family: Georgia, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 115%;
+	letter-spacing: 0.06em;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__inactive {
+		color: $color-dark-s;
+		border-color: $color-dark-s;
+	}
+
+	&__active {
+		background-color: $color-primary;
+	}
+}
